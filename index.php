@@ -53,7 +53,7 @@
         </div>
 
         <?php
-            $sql = pg_query($conn, "SELECT * FROM public.index");
+            $sql = pg_query($con, "SELECT * FROM public.index");
             if(pg_num_rows($sql)>0){
                 while($result = pg_fetch_assoc($sql)){
         ?>
