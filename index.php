@@ -58,12 +58,12 @@
                 while($result = pg_fetch_assoc($sql)){
         ?>
 
-        <div style="width:100%; height:fit-content; background-color:plum;">
+        <div style="width:100%; height:fit-content; background-color: #ECE1F3; border-bottom: 1px solid gray;">
             <ul>
-                <li>Name: <b><?php echo $result['name']; ?></b></li>
-                <li>Class: <b><?php echo $result['class']; ?></b></li>
-                <li>Birth: <b><?php echo $result['birth']; ?></b></li>
-                <li>Phone: <b><?php echo $result['phone']; ?></b></li>
+                <li>Name: <a style="text-style-types: none; text-decoration: none; color: #C87B74"><?php echo $result['name']; ?></a></li>
+                <li>Class: <a style="text-style-types: none; text-decoration: none; color: #C87B74"><?php echo $result['class']; ?></a></li>
+                <li>Birth: <a style="text-style-types: none; text-decoration: none; color: #C87B74"><?php echo $result['birth']; ?></a></li>
+                <li>Phone: <a style="text-style-types: none; text-decoration: none; color: #C87B74"><?php echo $result['phone']; ?></a></li>
             </ul>
         </div>
         <?php
